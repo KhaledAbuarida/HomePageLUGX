@@ -7,29 +7,35 @@ body {
 
 /* HEADER  */
 .header {
-    height: 100px;
+    position: sticky;
+    top: 0;
+    height: 80px;
     background-color: #0171F9;
     color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:0 100px;
+    padding: 30px 100px 0 100px;
 }
 
 .headerLinks {
     width: 50%;
 }
 
-.headerLinks ul{
+.headerLinks{
     display: flex;
     justify-content: space-between;
-    text-decoration: none;
+    align-items: center;
     list-style: none;
+}
 
+.headerLinks a {
+    text-decoration: none;
+    color: #fff;
 }
 
 .logo img {
-    width: 150px;   
+    width: 150px;
 }
 /* END HEADER  */
 
@@ -38,7 +44,7 @@ body {
     display: flex;
     background-color: #0171F9;
     color: #fff;
-    padding: 100px;
+    padding: 30px 100px 100px 100px;
 }
 
 .landingPageContainer .slogan {
@@ -48,7 +54,6 @@ body {
 }
 
 .landingPageContainer .welcome {
-    /* font-weight: 600; */
     font-size: x-large;
     height: 10px;
 }
@@ -58,9 +63,15 @@ body {
     width: 80%;
 }
 
+.searchBar {
+    position: relative;
+    margin-top: 100px;
+}
+
 .searchBar input {
     border-radius: 50px;
     border: none;
+    outline: none;
     width: 40%;
     height: 50px;
 }
@@ -72,7 +83,7 @@ body {
 
 .btn {
     border-radius: 50px;
-    height: 50px;
+    height: 52px;
     border: none;
     font-weight:600;
     font-size: medium;
@@ -82,7 +93,13 @@ body {
     text-transform: uppercase;
 }
 
+.searchBar .searchBtn {
+    position: absolute;
+    left: 300px;
+}
+
 .leftSide {
+    padding-top: 30px;
     flex: 8;
 }
 
@@ -91,10 +108,9 @@ body {
 }
 
 .imageContainer img {
-    width: 450px;
+    width: 100%;
     border-radius: 20px;
 }
-
 
 
 /* END LANDING PAGE  */
