@@ -3,12 +3,13 @@ body {
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    height: 5000px;
 }
 
 /* HEADER  */
 .header {
-    position: sticky;
-    top: 0;
+    /* position: sticky; */
+    /* top: 0; */
     height: 80px;
     background-color: #0171F9;
     color: #fff;
@@ -44,7 +45,8 @@ body {
     display: flex;
     background-color: #0171F9;
     color: #fff;
-    padding: 30px 100px 100px 100px;
+    padding: 30px 100px 200px 100px;
+    border-radius: 0 0 100px 100px;
 }
 
 .landingPageContainer .slogan {
@@ -114,3 +116,84 @@ body {
 
 
 /* END LANDING PAGE  */
+
+/* TRENDING GAMES */
+.trendingContainer {
+    padding: 0 100px;
+    margin-top: 100px;
+}
+
+.trendingHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 40px;
+    
+}
+
+.trendingHeader h1 {
+    margin-top: 0;
+}
+
+.trendingContainer span {
+    text-transform: uppercase;
+    color: #EE626B;
+    font-weight: 600;
+}
+
+.trendingCards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    position: relative;
+}
+
+
+.card img {
+    border-radius: 20px;
+}
+
+.card .cardInfo {
+    /* z-index: -1; */
+    position: absolute;
+    top: 200px;
+    width: 100%;
+    background-color: #EEEEEE;
+    border-radius: 0 0 20px 20px;
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card .cardName {
+    padding: 0 20px;
+}
+
+.cardName h3 {
+    margin-top: 0;
+}
+
+.cardName p {
+    color: gray;
+    margin-bottom: 0;
+}
+
+
+.cardInfo .icon img {
+    width: 50px;
+    transition: .3s;
+}
+
+.cardInfo .icon {
+    margin-right: 20px;
+}
+
+.cardInfo img:hover{
+    width: 60px;
+    /* transition: .3; */
+}
+
+/* END TRENDING GAMES */
