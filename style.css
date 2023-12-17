@@ -37,6 +37,12 @@ body {
 .headerLinks a {
     text-decoration: none;
     color: #fff;
+    padding: 10px 15px;
+    border-radius: 50px;
+}
+
+.headerLinks a:hover {
+    background-color: #1A7FF9;
 }
 
 .logo img {
