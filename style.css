@@ -3,10 +3,12 @@ body {
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    height: 5000px;
 }
 
 /* HEADER  */
+.headerContainer {
+    background-color: #0171F9;
+}
 .header {
     /* position: sticky; */
     /* top: 0; */
@@ -16,7 +18,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* padding: 30px 100px 0 100px; */
+    padding: 30px 100px 0 100px;
+    max-width: 1300px;
+    margin: auto;
 }
 
 .headerLinks {
@@ -42,25 +46,30 @@ body {
 
 /* LANDING PAGE  */
 .landingPageContainer {
+    background-color: #0171F9;
+    border-radius: 0 0 100px 100px;
+}
+.landingPage {
     display: flex;
     background-color: #0171F9;
     color: #fff;
-    padding: 30px 100px 200px 100px;
-    border-radius: 0 0 100px 100px;
+    padding: 100px 0;
+    max-width: 1300px;
+    margin: auto;
 }
 
-.landingPageContainer .slogan {
+.landingPage .slogan {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 50px;
 }
 
-.landingPageContainer .welcome {
+.landingPage .welcome {
     font-size: x-large;
     height: 10px;
 }
 
-.landingPageContainer .description {
+.landingPage .description {
     color: #000;
     width: 80%;
 }
@@ -119,46 +128,45 @@ body {
 
 /* TRENDING GAMES */
 .trendingContainer {
-    /* padding: 0 5%; */
     margin: auto;
     max-width: 1300px;
     margin-top: 100px;
 }
 
-.trendingHeader {
+.trendingHeader, .mostHeader {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     align-items: center;
     padding-bottom: 40px;
     
 }
 
-.trendingHeader h1 {
+.trendingHeader h1, .mostHeader h1, .categoryHeader h1 {
     margin-top: 0;
 }
 
-.trendingContainer span {
+.trendingContainer span, .mostContainer span, .categoryHeader span {
     text-transform: uppercase;
     color: #EE626B;
     font-weight: 600;
 }
 
-.trendingCards {
+.trendingCard, .mostCards, .categoryCards{
     display: flex;
     justify-content: space-between;
 }
 
-.card {
+.trendingCard .card {
     position: relative;
 }
 
 
-.card img {
+.trendingCard .card img {
     border-radius: 20px;
 }
 
-.card .cardInfo {
-    /* z-index: -1; */
+.trendingCard .card .cardInfo {
     position: absolute;
     top: 200px;
     width: 100%;
@@ -170,32 +178,116 @@ body {
     align-items: center;
 }
 
-.card .cardName {
+.trendingCard .card .cardName {
     padding: 0 20px;
 }
 
-.cardName h3 {
+.trendingCard .cardName h3 {
     margin-top: 0;
 }
 
-.cardName p {
+.trendingCard .cardName p {
     color: gray;
     margin-bottom: 0;
 }
 
 
-.cardInfo .icon img {
+.trendingCard .cardInfo .icon img {
     width: 50px;
     transition: .3s;
 }
 
-.cardInfo .icon {
+.trendingCard .cardInfo .icon {
     margin-right: 20px;
 }
 
-.cardInfo img:hover{
+.trendingCard .cardInfo img:hover{
     width: 60px;
-    /* transition: .3; */
 }
 
 /* END TRENDING GAMES */
+
+/* MOST PLAYED  */
+.cardImg img {
+    border-radius: 20px;
+}
+
+.mostCards .cardInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mostCards .cardInfo .genre {
+    margin-bottom: 0;
+    color: gray;
+}
+
+.mostContainer {
+    background-color: #EEEEEE;
+    margin-top: 200px;
+    padding: 50px;
+    border-radius: 100px;
+}
+
+.mostContainer .mostPlayed, .category {
+    max-width: 1300px;
+    margin: auto;
+}
+
+/* END MOST PLAYED  */
+
+/* CATEGORY GAMES  */
+
+.categoryContainer {
+    margin-top: 150px;
+}
+
+.category .categoryHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.category .card .cardImg{
+    position: relative;
+    top: -20px;
+}
+
+.category .card .genre {
+    background-color: #0171F9;
+    text-align: center;
+    color: #fff;
+    padding: 15px 0 30px 0;
+    font-size: large;
+    font-weight: 500;
+    border-radius: 20px 20px 0 0;
+}
+
+.category .categoryCards {
+    margin-top: 30px;
+}
+
+
+/* END CATEGORY GAMES  */
+
+/* FOOTER  */
+.footerContainer {
+    background-color: #0171F9;
+    height: 150px;
+    border-radius: 100px 100px 0 0;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.footer {
+    max-width: 1300px;
+    margin: auto;
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+    font-size: larger;
+}
+
+/* END FOOTER  */
